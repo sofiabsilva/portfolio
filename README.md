@@ -1,5 +1,5 @@
 # portfolio
-Project for the Free Code Camp curriculum.
+2nd project for the Free Code Camp curriculum.
 Still need to make it fully responsive.
 
 ## Live preview on Codepen

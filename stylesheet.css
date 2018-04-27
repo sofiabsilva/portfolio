@@ -5,12 +5,13 @@
 body {
  background-image: url("https://s18.postimg.cc/fzi8peutl/grey-chevron-stripes-1920.png");
  background-color: #3e434a;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
   padding:0;
   margin:0;
 }
-.navbar {
+
+.navbar, .static-bar  {
  background: #777;
  background: #656f7d;
   width: 100%;
@@ -19,7 +20,7 @@ body {
 box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.90);
 }
 
-nav ul {
+ul {
   list-style: none;
   padding: 15px;
   display: flex;
@@ -32,12 +33,12 @@ nav ul {
 
 li {
   padding: 15px ;
-  font-size: 16px;
+
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
-nav {
+nav, .static-bar {
   Position: fixed;
   top: 0;
   z-index: 2;
@@ -51,13 +52,16 @@ nav a {
 nav li:hover:not(.logo) {
   background-color: Gainsboro;
   font-weight: bold;
+} {
+  background-color: Gainsboro;
+  font-weight: bold;
 }
-nav li:first-child {
+.static-bar li {
   margin-right: auto;
   font-family: 'Reenie Beanie', cursive;
   color: white;
-  font-size: 25px;
-  padding: 10px 10px 0 30px;
+  font-size: 23px;
+  padding: 7px 10px 0 30px;
   padding-bottom: 0px;
 }
 
@@ -98,7 +102,7 @@ section.box1 {
 .text {
   text-align: justify;
   color: #231f1f;
-  text-shadow: 0px 0px 8px #fff;
+  text-shadow: 2px 2px 8px #b3b3b3;
   width: 65%;
   max-width: 600px;
   min-width: 250px;
@@ -119,10 +123,9 @@ section.box1 {
 }
 .profilePhoto {
   border-radius: 50%;
-  min-width: 180px;
+  min-width:200px;
   max-width: 350px;
   width: 30%;
-  align-items: middle;
   border: solid;
   border-color: #656f7d;
   border-width: thin;
@@ -200,7 +203,6 @@ section.box3 {
 }
 
 #social.text {
-  text-align: right;
   color: #231f1f;
   text-shadow: 0px 0px 8px #fff;
   width: 100%;
@@ -225,7 +227,7 @@ section.box3 {
   margin: 2%;
   background: transparent;
   border: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .fab {
@@ -259,28 +261,58 @@ footer p {
   font-size: 24px;
 }
 
+
+
+
+/*
+
+RESPONSIVE DESIGN
+   for hamburger icon to work:
+*/
+.navbar.responsive {
+  display: block;
+}
+.logo {
+  display: none;
+}
 /*
 
 until viewport reaches 600px wide
 
 */
 @media screen and (max-width: 600px) {
+  
+.navbar {
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  /*
+  burger is done
+  */
+  
   .text {
     margin: auto;
     width: 95%;
     padding: 0;
   }
-    .profilePhoto {
+   .profilePhoto {
     order: -3;
     width: 100%;
-    max-width: 200px;
+    max-width: 195px;
     margin: auto;
+    margin-top: 30px;
   }
   .title {
     font-size: 20px;
   }
    .text p {
-    font-size: 16px;
+    font-size: 17px;
   }
   section.box1 {
     flex-wrap: wrap;
@@ -292,17 +324,20 @@ until viewport reaches 600px wide
   section h1 {
     text-align: center;
     width: 100%;
-    font-size: 22px;
+    font-size: 23px;
   }
   .gallery {
     margin: 2%;
   }
    .description {
-   font-size: 16px;
+   font-size: 17px;
   }
 }
+
 /* 
+
 until viewport= 450px
+
 */
 @media screen and (max-width: 450px) {
   nav ul {
@@ -311,31 +346,42 @@ until viewport= 450px
   justify-content: flex-end;
   }
   li {
-    font-size: 14px;
-  }
-   .logo h1{
-     font-size: 22px;
+    font-size: 16px;
   }
   .text {
     width: 95%;
   }
   .text h1{
-    font-size: 20px;
+    font-size: 22px;
   } 
   .text p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 /*
 from 601px to 750px 
 */
+
+@media screen and (min-width: 601px) {
+  .logo {
+    display: inline;
+  }
+ nav li:first-child {
+  margin-right: auto;
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 28px;
+  padding: 10px 10px 0 30px;
+  padding-bottom: 0px;
+  }
+}
 @media screen and (min-width: 601px) and (max-width: 750px){
   .gallery img {
     width: 280px;
   }
   .text h1 {
-    font-size: 25px;
+    font-size: 26px;
     text-align: left;
   }
   .title {

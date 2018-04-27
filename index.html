@@ -5,18 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Open+Sans" rel="stylesheet">
   <title>Sofia's Portfolio</title>
+     <style>
+     /* I used a font-awesome icon so for codepen I had to add some styles here */
+    .fa-bars {display: none;
+       }
+   @media screen and (max-width: 600px) {
+    .fa-bars {
+    float: right;
+    color: white;
+    padding: 15px;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    display: flex;
+    cursor: pointer;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+        }
+      }
+    </style>
 </head>
 <body>
   <header>
   <div class="wrapper">
-   <nav class="navbar">
+    <a class="menu"><i class="fas fa-bars"></i></a>
+  <div class="static-bar">
+    <ul>
+      <li><h1>SBS</h1></li>
+    </ul>
+  </div>
+   <nav class="navbar" id="drawer">
     <ul>
       <li class="logo"><h1>SBS</h1></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="nav nav-item"><a href="#about">About</a></li>
+      <li class="nav nav-item"><a href="#portfolio">Portfolio</a></li>
+      <li class="nav nav-item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   </div>
@@ -44,7 +69,7 @@
       </div>
      <div class="gallery">
        <a href="https://codepen.io/Tubbie/full/yKeJyQ" target =“_blank”><img src="https://s18.postimg.cc/u0riq6h7t/brighton-times-size.jpg" alt="Responsive Design"></a>
-       <div class="description">Responsive Web Design<p>HTML, CSS & Javascript<p></div>
+       <div class="description">Responsive Web Page<p>HTML, CSS & Javascript<p></div>
      </div>
      <div class="gallery">
        <a href="https://codepen.io/Tubbie/full/VxvZEx" target =“_blank”><img src="https://s18.postimg.cc/ipov1kxfd/greenday-tribute-page-size.jpg" alt="Tribute Page"></a>
@@ -52,7 +77,7 @@
      </div>
      <div class="gallery">
        <a href="https://codepen.io/Tubbie/full/yPExxX" target =“_blank”><img src="https://s18.postimg.cc/uc8z2wnd5/css-grid-layout-size.jpg" alt="CSS grid layout"></a>
-       <div class="description">CSS Grid Layout with Gradients<p>HTML & CSS</p></div>
+       <div class="description">CSS Grid Layout<p>HTML & CSS</p></div>
      </div>      
       <div class="gallery">
        <a href="https://codepen.io/Tubbie/full/gXjeov" target =“_blank”><img src="https://s18.postimg.cc/oqmjz0uft/profile-banner-size.jpg" alt="Profile Banner layout"></a>

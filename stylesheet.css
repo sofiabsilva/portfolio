@@ -162,11 +162,12 @@ section.box2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 .gallery {
   border: 2px solid #dedede;
   margin: 1%;
+  margin-bottom: 5%;
   -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);

@@ -33,9 +33,6 @@ ul {
 
 li {
   padding: 15px ;
-
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 
 nav, .static-bar {
@@ -45,16 +42,17 @@ nav, .static-bar {
 }
 nav a {
   color: white;
+  padding: 15px;
+  line-height: 10px;
   text-decoration: none;
-  padding: 1%;
+  padding: 15px;
   text-transform: uppercase;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
-nav li:hover:not(.logo) {
-  background-color: Gainsboro;
-  font-weight: bold;
-} {
-  background-color: Gainsboro;
-  font-weight: bold;
+nav a:hover {
+  color: #656f7d;
+   background-color: Gainsboro;
 }
 .static-bar li {
   margin-right: auto;
@@ -117,9 +115,9 @@ section.box1 {
   line-height: 1.5em;
 }
 .text h1 {
-  color: #656f7d;
+  color: #525963;
   line-height: 1.5em;
-  font-size: 27px;
+  font-size: 30px;
 }
 .profilePhoto {
   border-radius: 50%;
@@ -146,7 +144,7 @@ portfolio section
 
 */
 .box2 h1 {
-  color: #656f7d;
+  color: #525963;
   line-height: 1.5em;
   font-size: 35px;
   margin-bottom: 5%;

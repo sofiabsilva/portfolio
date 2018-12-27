@@ -13,7 +13,11 @@ body {
 
 .navbar, .static-bar  {
  background: #777;
+<<<<<<< HEAD
  background: #583869;
+=======
+ background: #656f7d;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   width: 100%;
 -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.90);
 -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.90);
@@ -51,8 +55,13 @@ nav a {
   transition-duration: 0.4s;
 }
 nav a:hover {
+<<<<<<< HEAD
   color: #583869;
   background-color: Gainsboro;
+=======
+  color: #656f7d;
+   background-color: Gainsboro;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 }
 .static-bar li {
   margin-right: auto;
@@ -63,9 +72,15 @@ nav a:hover {
   padding-bottom: 0px;
 }
 
+<<<<<<< HEAD
 /*
 
 to overcome fixed nav bar when linking to sections
+=======
+/* 
+
+to overcome fixed nav bar when linking to sections 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 
 */
 #portfolio, #contact{
@@ -75,7 +90,11 @@ to overcome fixed nav bar when linking to sections
   margin-top: -110px; /*~header height*/
   visibility: hidden;
 }
+<<<<<<< HEAD
 /*
+=======
+/* 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 
 styling the sections
 
@@ -86,10 +105,17 @@ section {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+<<<<<<< HEAD
 
 }
 section.box1 {
   background-color: #5838691c;
+=======
+  
+}
+section.box1 {
+  background-color: #00000021;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   padding: 200px 95px 150px 100px;
   box-sizing: border-box;
   height: auto;
@@ -99,7 +125,11 @@ section.box1 {
 
 .text {
   text-align: justify;
+<<<<<<< HEAD
   color: #000;
+=======
+  color: #231f1f;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   text-shadow: 2px 2px 8px #b3b3b3;
   width: 65%;
   max-width: 600px;
@@ -115,7 +145,11 @@ section.box1 {
   line-height: 1.5em;
 }
 .text h1 {
+<<<<<<< HEAD
   color: #583869;
+=======
+  color: #525963;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   line-height: 1.5em;
   font-size: 30px;
 }
@@ -125,7 +159,11 @@ section.box1 {
   max-width: 350px;
   width: 30%;
   border: solid;
+<<<<<<< HEAD
   border-color: #583869;
+=======
+  border-color: #656f7d;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   border-width: thin;
   margin-bottom: 60px;
 }
@@ -138,13 +176,21 @@ section.box1 {
   border-style: solid;
   border-color: transparent transparent transparent #f4f4f4;
   }
+<<<<<<< HEAD
 /*
+=======
+/* 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 
 portfolio section
 
 */
 .box2 h1 {
+<<<<<<< HEAD
   color: #583869;
+=======
+  color: #525963;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   line-height: 1.5em;
   font-size: 35px;
   margin-bottom: 5%;
@@ -185,12 +231,21 @@ section.box2 {
   font-weight: bold;
 }
 .gallery:hover {
+<<<<<<< HEAD
     border: 2px solid #583869;
 }
 
 /*
 
 contact section
+=======
+    border: 2px solid #656f7d;
+}
+
+/* 
+
+contact section 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 
 */
 
@@ -198,7 +253,11 @@ section.box3 {
   padding: 150px 100px 100px;
   box-sizing: border-box;
   height: auto;
+<<<<<<< HEAD
   background: #5838691c;
+=======
+  background: #00000021;
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 }
 
 #social.text {
@@ -217,7 +276,11 @@ section.box3 {
   padding: 15px;
   width: 100%;
   text-align: center;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 }
 .box3 button {
   padding: 15px;
@@ -251,7 +314,11 @@ section.box3 {
   border-color: transparent  transparent transparent #f4f4f4;
 }
 footer {
+<<<<<<< HEAD
   background-color: #f4f4f4;
+=======
+  background-color: #f4f4f4; 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   text-align: center;
 }
 footer p {
@@ -280,21 +347,37 @@ until viewport reaches 600px wide
 
 */
 @media screen and (max-width: 600px) {
+<<<<<<< HEAD
 
 .navbar {
     display: none;
   }
 
+=======
+  
+.navbar {
+    display: none;
+  }
+  
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
+<<<<<<< HEAD
 
   /*
   burger is done
   */
 
+=======
+  
+  /*
+  burger is done
+  */
+  
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   .text {
     margin: auto;
     width: 95%;
@@ -333,7 +416,11 @@ until viewport reaches 600px wide
   }
 }
 
+<<<<<<< HEAD
 /*
+=======
+/* 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 
 until viewport= 450px
 
@@ -352,14 +439,22 @@ until viewport= 450px
   }
   .text h1{
     font-size: 22px;
+<<<<<<< HEAD
   }
+=======
+  } 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
   .text p {
     font-size: 16px;
   }
 }
 
 /*
+<<<<<<< HEAD
 from 601px to 750px
+=======
+from 601px to 750px 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 */
 
 @media screen and (min-width: 601px) {
@@ -400,7 +495,11 @@ from 601px to 750px
   }
 }
 /*
+<<<<<<< HEAD
 bigger screen
+=======
+bigger screen 
+>>>>>>> 2a445edaba60fd29a4388dd85e5dfb6999e6d602
 */
 @media screen and (min-width: 1045px) {
   section {

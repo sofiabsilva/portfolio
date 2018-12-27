@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+}
+
+body {
+ background-image: url("https://s18.postimg.cc/fzi8peutl/grey-chevron-stripes-1920.png");
+ background-color: #3e434a;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  padding:0;
+  margin:0;
+}
+
+.navbar, .static-bar  {
+ background: #777;
+ background: #583869;
+  width: 100%;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.90);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.90);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.90);
+}
+
+ul {
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1051px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-end;
+}
+
+li {
+  padding: 15px ;
+}
+
+nav, .static-bar {
+  Position: fixed;
+  top: 0;
+  z-index: 2;
+}
+nav a {
+  color: white;
+  padding: 15px;
+  line-height: 10px;
+  text-decoration: none;
+  padding: 15px;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+nav a:hover {
+  color: #583869;
+  background-color: Gainsboro;
+}
+.static-bar li {
+  margin-right: auto;
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 23px;
+  padding: 7px 10px 0 30px;
+  padding-bottom: 0px;
+}
+
+/*
+
+to overcome fixed nav bar when linking to sections
+
+*/
+#portfolio, #contact{
+  display: hidden;
+  display: block;
+  height: 110px; /*~header height*/
+  margin-top: -110px; /*~header height*/
+  visibility: hidden;
+}
+/*
+
+styling the sections
+
+*/
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+}
+section.box1 {
+  background-color: #5838691c;
+  padding: 200px 95px 150px 100px;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  text-align: justify;
+  color: #000;
+  text-shadow: 2px 2px 8px #b3b3b3;
+  width: 65%;
+  max-width: 600px;
+  min-width: 250px;
+  padding-right: 3%;
+}
+
+.text p {
+  text-align: justify;
+  font-size: 18px;
+  padding-bottom: 50px;
+  padding-top: 3%;
+  line-height: 1.5em;
+}
+.text h1 {
+  color: #583869;
+  line-height: 1.5em;
+  font-size: 30px;
+}
+.profilePhoto {
+  border-radius: 50%;
+  min-width:200px;
+  max-width: 350px;
+  width: 30%;
+  border: solid;
+  border-color: #583869;
+  border-width: thin;
+  margin-bottom: 60px;
+}
+.container1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 100px 0 0 1400px;
+  height: auto;
+  border-style: solid;
+  border-color: transparent transparent transparent #f4f4f4;
+  }
+/*
+
+portfolio section
+
+*/
+.box2 h1 {
+  color: #583869;
+  line-height: 1.5em;
+  font-size: 35px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+section.box2 {
+  background-color: #f4f4f4;
+  padding: 0 100px 10px;
+  box-sizing: border-box;
+  height: auto;
+}
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+.gallery {
+  border: 2px solid #dedede;
+  margin: 1%;
+  margin-bottom: 5%;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+ -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.gallery img {
+  width: 230px;
+}
+.description {
+  font-size: 15px;
+  text-align: center;
+  padding: 3%;
+  background-color: white;
+}
+.description p {
+  font-weight: bold;
+}
+.gallery:hover {
+    border: 2px solid #583869;
+}
+
+/*
+
+contact section
+
+*/
+
+section.box3 {
+  padding: 150px 100px 100px;
+  box-sizing: border-box;
+  height: auto;
+  background: #5838691c;
+}
+
+#social.text {
+  color: #231f1f;
+  text-shadow: 0px 0px 8px #fff;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:0;
+  margin: auto;
+}
+#social.text h1 {
+  font-size: 35px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+
+}
+.box3 button {
+  padding: 15px;
+  font-size: 19px;
+  text-decoration: none;
+  margin: 2%;
+  background: transparent;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fab {
+  font-size: 36px;
+}
+.sm-link {
+  text-decoration: none;
+  color: #231f1f;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.sm-link:hover {
+  color: #fff;
+  text-shadow: 0px 0px 8px #000;
+}
+.container3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 0 0 100px 1400px;
+  border-style: solid;
+  border-color: transparent  transparent transparent #f4f4f4;
+}
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+footer p {
+  padding: 15px;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 24px;
+}
+
+
+
+
+/*
+
+RESPONSIVE DESIGN
+   for hamburger icon to work:
+*/
+.navbar.responsive {
+  display: block;
+}
+.logo {
+  display: none;
+}
+/*
+
+until viewport reaches 600px wide
+
+*/
+@media screen and (max-width: 600px) {
+
+.navbar {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /*
+  burger is done
+  */
+
+  .text {
+    margin: auto;
+    width: 95%;
+    padding: 0;
+  }
+   .profilePhoto {
+    order: -3;
+    width: 100%;
+    max-width: 195px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .title {
+    font-size: 20px;
+  }
+   .text p {
+    font-size: 17px;
+  }
+  section.box1 {
+    flex-wrap: wrap;
+    padding: 100px 50px 100px 50px;
+  }
+   .gallery img {
+    width: 280px;
+  }
+  section h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 23px;
+  }
+  .gallery {
+    margin: 2%;
+  }
+   .description {
+   font-size: 17px;
+  }
+}
+
+/*
+
+until viewport= 450px
+
+*/
+@media screen and (max-width: 450px) {
+  nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  }
+  li {
+    font-size: 16px;
+  }
+  .text {
+    width: 95%;
+  }
+  .text h1{
+    font-size: 22px;
+  }
+  .text p {
+    font-size: 16px;
+  }
+}
+
+/*
+from 601px to 750px
+*/
+
+@media screen and (min-width: 601px) {
+  .logo {
+    display: inline;
+  }
+ nav li:first-child {
+  margin-right: auto;
+  font-family: 'Reenie Beanie', cursive;
+  color: white;
+  font-size: 28px;
+  padding: 10px 10px 0 30px;
+  padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 750px){
+  .gallery img {
+    width: 280px;
+  }
+  .text h1 {
+    font-size: 26px;
+    text-align: left;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .text p {
+    font-size: 17px;
+  }
+  section.box1 {
+    padding: 200px 70px 150px 70px;
+  }
+  section.box2 {
+    padding: 0px 70px 100px 70px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+/*
+bigger screen
+*/
+@media screen and (min-width: 1045px) {
+  section {
+    width: 1051px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .wrapper {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

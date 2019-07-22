@@ -91,6 +91,7 @@ section {
 
 }
 section.box1 {
+  justify-content: center;
   background-color: #5838691c;
   padding: 200px 95px 150px 100px;
   box-sizing: border-box;
@@ -101,10 +102,10 @@ section.box1 {
 
 .text {
   text-align: justify;
-  color: #000;
+  color: #303030;
   text-shadow: 2px 2px 8px #b3b3b3;
   width: 65%;
-  max-width: 600px;
+  max-width: 541px;
   min-width: 250px;
   padding-right: 3%;
 }
@@ -124,7 +125,7 @@ section.box1 {
 .profilePhoto {
   border-radius: 50%;
   min-width:200px;
-  max-width: 350px;
+  max-width: 250px;
   width: 30%;
   border: solid;
   border-color: #583869;
@@ -159,6 +160,8 @@ section.box2 {
   height: auto;
 }
 .gallery-content {
+  max-width: 800px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -406,7 +409,6 @@ bigger screen
 */
 @media screen and (min-width: 1045px) {
   section {
-    width: 1051px;
     margin-right: auto;
     margin-left: auto;
   }

@@ -148,9 +148,6 @@ section.box1 {
   min-width:200px;
   max-width: 250px;
   width: 30%;
-  border: solid;
-  border-color: #583869;
-  border-width: thin;
   margin-bottom: 60px;
 }
 .container1 {

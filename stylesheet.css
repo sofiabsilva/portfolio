@@ -254,7 +254,12 @@ section.box3 {
   border: none;
   font-family: 'Open Sans', sans-serif;
 }
-
+.email {
+  text-align: center;
+}
+.email .fas {
+  font-size: 36px;
+}
 .fab {
   font-size: 36px;
 }

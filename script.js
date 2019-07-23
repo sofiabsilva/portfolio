@@ -15,3 +15,12 @@ var responsiveNav = document.querySelector("#drawer");
       }
     });
     
+
+// To display e-mail hidden from bots, from https://stackoverflow.com/a/23195351
+var user = 'sofiabsilva.dev',
+    domain = 'gmail.com',
+    element = document.getElementById('mail');
+    if (element) {
+      element.innerHTML = '<i class="fas fa-envelope"></i> ' + user + '@' + domain;
+      element.href = 'mailto:' + user + '@' + domain;
+    }
